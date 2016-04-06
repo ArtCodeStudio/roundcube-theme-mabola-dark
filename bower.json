@@ -1,0 +1,20 @@
+{
+  "name": "mabola-dark",
+  "description": "Customized Roundcube skin with JumpLink branding",
+  "main": "",
+  "authors": [
+    "Pascal Garber <pascal@jumplink.eu>"
+  ],
+  "license": "GPL3",
+  "homepage": "http://www.jumplink.eu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}

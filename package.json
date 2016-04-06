@@ -1,0 +1,17 @@
+{
+  "name": "mabola-dark",
+  "version": "0.0.1",
+  "description": "Customized Roundcube skin with JumpLink branding",
+  "scripts": {
+    "preinstall": "bower install",
+    "postinstall": "npm run build",
+    "sass": "node_modules/.bin/node-sass dark.scss dark.css",
+    "build": "npm run sass",
+    "watch": "npm run sass -- -w"
+  },
+  "author": "Pascal Garber <pascal@jumplink.eu>",
+  "license": "GPL3",
+  "dependencies": {
+    "node-sass": "^3.4.2"
+  }
+}

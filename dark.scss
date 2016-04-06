@@ -1,0 +1,142 @@
+$fa-font-path:        "bower_components/font-awesome/fonts";
+@import "./bower_components/font-awesome/scss/font-awesome.scss";
+
+$inverse-color: #272822;
+$select-color: #2FD167;
+
+.minimal #taskbar a, #taskbar a {
+    color: #edf7fc;
+}
+
+.minimal #topline,
+#topline {
+    background: $inverse-color none repeat scroll 0 0;
+    border: none;
+}
+
+#topnav {
+    box-shadow: none;
+    background-image: url("images/logo_inverse.png");
+}
+
+#topnav, 
+.listbox .listitem.selected,
+.listbox .tablink.selected,
+.listbox .listitem.selected > a,
+.listbox .tablink.selected > a,
+.listing tbody tr.selected td,
+.listing li.selected,
+.listing li.selected > a,
+#directorylist li.addressbook.selected > a 
+{
+    background-color: $inverse-color;
+}
+
+/**
+ * Replace icons with font-awesome
+ */
+
+@mixin fa-replacer($icon-name, $height) {
+    background: none;
+    &:before {
+        @extend .#{$fa-css-prefix};
+        @extend .#{$fa-css-prefix}-#{$icon-name}:before;
+        text-indent: initial;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        color: $inverse-color;
+        
+        min-height: $height;
+        line-height: $height;
+    }
+}
+
+.messagelist thead tr th.attachment span.attachment {
+    @include fa-replacer('paperclip', 20px);
+}
+
+.messagelist thead tr th.flag span.flagged {
+    @include fa-replacer('flag', 20px);
+}
+
+.messagelist thead tr th.status span.status {
+    @include fa-replacer('star', 20px);
+}
+
+.messagelist tr th.threads .listmenu {
+    @include fa-replacer('cog', 24px);
+}
+
+
+ul.toolbarmenu li span.print {
+    @include fa-replacer('print', 14px);
+    &:before {
+        margin-left: -29px;
+        padding-right: 14px;
+        display: inline-block;
+    }
+}
+
+ul.toolbarmenu li span.download {
+    @include fa-replacer('download', 14px);
+    &:before {
+        margin-left: -29px;
+        padding-right: 14px;
+        display: inline-block;
+    }
+}
+
+ul.toolbarmenu li span.edit {
+    @include fa-replacer('pencil', 14px);
+    &:before {
+        margin-left: -29px;
+        padding-right: 14px;
+        display: inline-block;
+    }
+}
+
+ul.toolbarmenu li span.viewsource {
+    @include fa-replacer('code', 14px);
+    &:before {
+        margin-left: -29px;
+        padding-right: 12px;
+        display: inline-block;
+    }
+}
+
+ul.toolbarmenu li span.move {
+    @include fa-replacer('arrows', 14px);
+    &:before {
+        margin-left: -29px;
+        padding-right: 14px;
+        display: inline-block;
+    }
+}
+
+ul.toolbarmenu li span.copy {
+    @include fa-replacer('clone', 14px);
+    &:before {
+        margin-left: -29px;
+        padding-right: 14px;
+        display: inline-block;
+    }
+}
+
+ul.toolbarmenu li span.extwin {
+    @include fa-replacer('external-link', 14px);
+    &:before {
+        margin-left: -29px;
+        padding-right: 14px;
+        display: inline-block;
+    }
+}
+
+ul.toolbarmenu li span.filterlink {
+    @include fa-replacer('filter', 14px);
+    &:before {
+        margin-left: -29px;
+        padding-right: 16px;
+        display: inline-block;
+    }
+}
