@@ -140,3 +140,12 @@ ul.toolbarmenu li span.filterlink {
         display: inline-block;
     }
 }
+
+/**
+ * Login
+ */
+ 
+ #login-form .box-inner {
+     background: $inverse-color url("images/logo_inverse.png") no-repeat scroll center 14px;
+     background-size: 100px;
+ }
