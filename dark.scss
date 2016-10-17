@@ -149,3 +149,7 @@ ul.toolbarmenu li span.filterlink {
      background: $inverse-color url("images/logo_inverse.png") no-repeat scroll center 14px;
      background-size: 100px;
  }
+
+#taskbar a.button-settings:before {
+	line-height: 2.4;
+}
