@@ -11,8 +11,21 @@ cd /usr/local/lib/roundcubemail/skins
 git clone https://github.com/EstudioNexos/mabola.git
 # Clone this theme
 git clone https://github.com/JumpLinkNetwork/roundcube-theme-mabola-dark.git mabola-dark
+# Go to plugin folder
+cd ../plugins/
+# Install threecol plugin
+git clone https://github.com/EstudioNexos/threecol.git
+# Create link for this theme
+cd threecol/skins
+ln -s mabola mabola-dark
+# activate threecol plugin
+cd ../../..
+vim config/config.inc.php
+# Add add this plugin to `$config['plugins'] = array('threecol', ...;`
+# and append `$config['previewpane_layout'] = 'right';` to the end of the config file
 ```
 
 # See also
-* https://github.com/roundcube/elastic
+* https://github.com/EstudioNexos/mabola
+
 
