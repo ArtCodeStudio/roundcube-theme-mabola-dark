@@ -1,7 +1,7 @@
 Mabola: Dark Theme for Roundcube Webmail
 ==================================
 
-![Preview](thumbnail.png)
+![Preview](preview.png)
 
 This theme is based on and refers to https://github.com/EstudioNexos/mabola
 
