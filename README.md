@@ -1,5 +1,7 @@
-Mabola: Blue Skin for Roundcube Webmail
+Mabola: Dark Theme for Roundcube Webmail
 ==================================
+
+![Preview](thumbnail.png)
 
 This theme is based on and refers to https://github.com/EstudioNexos/mabola
 
@@ -27,5 +29,6 @@ vim config/config.inc.php
 
 # See also
 * https://github.com/EstudioNexos/mabola
+* https://github.com/EstudioNexos/threecol
 
 
