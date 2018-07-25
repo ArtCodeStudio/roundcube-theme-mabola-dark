@@ -25,6 +25,8 @@ cd ../../..
 vim config/config.inc.php
 # Add add this plugin to `$config['plugins'] = array('threecol', ...;`
 # and append `$config['previewpane_layout'] = 'right';` to the end of the config file
+
+# Optional make this theme to the default theme with `$config['skin'] = 'mabola-dark';`
 ```
 
 # See also
